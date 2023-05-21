@@ -2,8 +2,8 @@ package process
 
 import (
 	"context"
-	"homework/internal/model"
 	"time"
+	"trying-concurrency-go/internal/model"
 )
 
 func New() *Implementation {

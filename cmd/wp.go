@@ -4,15 +4,15 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
-	"homework/internal/model"
-	"homework/internal/pkg/generator"
-	"homework/internal/pkg/service/gateway"
-	completestep "homework/internal/pkg/service/gateway/steps/complete"
-	createstep "homework/internal/pkg/service/gateway/steps/create"
-	processstep "homework/internal/pkg/service/gateway/steps/process"
 	"log"
 	"sync"
 	"time"
+	"trying-concurrency-go/internal/model"
+	"trying-concurrency-go/internal/pkg/generator"
+	"trying-concurrency-go/internal/pkg/service/gateway"
+	completestep "trying-concurrency-go/internal/pkg/service/gateway/steps/complete"
+	createstep "trying-concurrency-go/internal/pkg/service/gateway/steps/create"
+	processstep "trying-concurrency-go/internal/pkg/service/gateway/steps/process"
 )
 
 const (

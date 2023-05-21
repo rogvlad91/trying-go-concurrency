@@ -2,7 +2,7 @@ package generator
 
 import (
 	"context"
-	"homework/internal/model"
+	"trying-concurrency-go/internal/model"
 )
 
 func GenerateOrderIds(ctx context.Context, limit uint64) <-chan model.OrderId {

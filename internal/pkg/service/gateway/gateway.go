@@ -2,12 +2,12 @@ package gateway
 
 import (
 	"context"
-	"homework/internal/model"
-	completestep "homework/internal/pkg/service/gateway/steps/complete"
-	createstep "homework/internal/pkg/service/gateway/steps/create"
-	processstep "homework/internal/pkg/service/gateway/steps/process"
 	"log"
 	"sync"
+	"trying-concurrency-go/internal/model"
+	completestep "trying-concurrency-go/internal/pkg/service/gateway/steps/complete"
+	createstep "trying-concurrency-go/internal/pkg/service/gateway/steps/create"
+	processstep "trying-concurrency-go/internal/pkg/service/gateway/steps/process"
 )
 
 func New(create *createstep.Implementation, process *processstep.Implementation, complete *completestep.Implementation) *Implementation {
